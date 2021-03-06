@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <canvas id="GLCanvas" width="640" height="480"> <!-- Create the HTML canvas for drawing -->
+            Your browser does not support the HTML5 canvas.
+        </canvas>
+        <script type="text/javascript">
+            var canvas = document.getElementById("GLCanvas"); // creates a new variable named canvas 
+            // and stores a reference to the GLCanvas drawing area in this variable.
+            var gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl"); //Retrieve 
+            // and bind a reference to the WebGL context to the drawing area
+
+            if (gl !== null) { // Clear the canvas drawing area to your favorite color through WebGL
+                gl.clearColor(0.0, 0.8, 0.0, 1.0); // set the color to be cleared
+                gl.clear(gl.COLOR_BUFFER_BIT); // clear the colors
+            }
+        </script>
+    </body>
+</html>
