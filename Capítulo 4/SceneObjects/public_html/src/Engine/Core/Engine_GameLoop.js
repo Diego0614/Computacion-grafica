@@ -10,7 +10,7 @@ gEngine.GameLoop = (function () {
     // The current loop state (running or should stop)
     var mIsLoopRunning = false;
     var mMyGame = null;
-    // This function assumes it is sub-classed from MyGame
+    // This function assumes it is sub-classed from MyGame   
     var _runLoop = function () {
         if (mIsLoopRunning) {
             // Step A: set up for next call to _runLoop and update input!
@@ -33,8 +33,12 @@ gEngine.GameLoop = (function () {
             // Step D: now let's draw
             this.draw();    // Call Scene.draw()
         } else {
-            // this scene is done, unload it!
+            
+            
+            // this scene is done, unload it!           
             mMyGame.unloadScene();
+            
+            
         }
     };
 

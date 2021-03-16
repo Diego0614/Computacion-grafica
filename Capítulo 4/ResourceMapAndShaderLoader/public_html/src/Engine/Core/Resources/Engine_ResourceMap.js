@@ -1,6 +1,6 @@
 var gEngine = gEngine || {};
 gEngine.ResourceMap = (function () {
-
+    // Define a simple object for storing each resource.
     var MapEntry = function (rName) {
         this.mAsset = rName;
     };

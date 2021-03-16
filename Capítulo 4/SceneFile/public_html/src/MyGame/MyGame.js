@@ -1,4 +1,5 @@
 
+
 // Initialize the webGL Context
 function MyGame() {
 // scene file name
@@ -14,6 +15,8 @@ MyGame.prototype.loadScene = function () {
 MyGame.prototype.unloadScene = function () {
     gEngine.TextFileLoader.unloadTextFile(this.kSceneFile);
 };
+
+
 MyGame.prototype.initialize = function () {
     var sceneParser = new SceneFileParser(this.kSceneFile);
 // Step A: Parse the camera

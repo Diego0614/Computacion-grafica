@@ -1,3 +1,4 @@
+// This file will contain the parsing logic to decode the scene file
 function SceneFileParser(sceneFilePath) {
     this.mSceneXml = gEngine.ResourceMap.retrieveAsset(sceneFilePath);
 }

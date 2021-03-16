@@ -1,8 +1,6 @@
 "use strict"; // Operate in Strict mode
-
 var gEngine = gEngine || { };
     // initialize the variable while ensuring it is not redefined
-
 gEngine.Core = (function () {
     // instance variables
     // The graphical context to draw to
@@ -36,6 +34,8 @@ gEngine.Core = (function () {
         mGL.clearColor(color[0], color[1], color[2], color[3]);  // set the color to be cleared
         mGL.clear(mGL.COLOR_BUFFER_BIT);      // clear to the color previously set
     };
+    
+    
     var inheritPrototype = function (subClass, superClass) {
         var prototype = Object.create(superClass.prototype);
         prototype.constructor = subClass;

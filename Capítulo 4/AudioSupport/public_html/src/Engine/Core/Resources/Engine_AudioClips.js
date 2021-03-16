@@ -1,3 +1,4 @@
+// Here we define functions to load and unload audio files in the game
 var gEngine = gEngine || {};
 
 gEngine.AudioClips = (function () {

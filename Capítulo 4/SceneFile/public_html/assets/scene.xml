@@ -1,3 +1,4 @@
+<!-- The same scene as defined in the initialize() functions from previous MyGame objects -->
 <MyGameLevel>
     <Camera CenterX="20" CenterY="60" Width="20"
             Viewport="20 40 600 300"
